@@ -13,7 +13,7 @@ export const Header = () => {
   const authUrl = process.env.AUTH_URL as string;
 
   return (
-    <Flex className='fixed top-0 left-0'>
+    <Flex className='fixed top-0 left-0 z-10'>
       <AdaptiveLayout>
         <Flex align='center' justify='between'>
           <Link href={'#hero'}>

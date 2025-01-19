@@ -10,6 +10,16 @@ export default {
         primary: 'var(--primary)',
         'primary-shadow': 'var(--primary-shadow)',
       },
+      animation: {
+        blink: 'blink 1s linear infinite',
+      },
+      keyframes: {
+        blink: {
+          '0%': { opacity: '100%' },
+          '50%': { opacity: '0%' },
+          '100%': { opacity: '100%' },
+        },
+      },
     },
   },
   plugins: [],
