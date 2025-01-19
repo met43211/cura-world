@@ -52,5 +52,6 @@ export const Button = forwardRef(
     );
   },
 ) as <C extends ElementType = 'button'>(
+  // eslint-disable-next-line no-unused-vars
   props: ButtonProps<C> & { ref?: React.Ref<React.ComponentRef<C>> },
 ) => ReactElement;
