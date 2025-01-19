@@ -1,11 +1,9 @@
-import { Button } from '@/shared/ui/button/';
+import { Flex } from '@/shared/ui/flex';
 
 export const Hero = () => {
   return (
-    <div>
-      <h1>HERO</h1>
-      <p>hero</p>
-      <Button>Cura World</Button>
-    </div>
+    <Flex align='center' className='h-80' id='hero' justify='center'>
+      <h3>Hero Block</h3>
+    </Flex>
   );
 };

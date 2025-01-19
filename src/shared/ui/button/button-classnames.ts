@@ -3,7 +3,7 @@ import { VariantProps } from 'tailwind-variants';
 import { tv } from '../../lib/utils/styling';
 
 export const buttonTv = tv({
-  base: 'px-4 min-w-20 h-10 text-[24px] gap-2 z-0 group inline-flex items-center justify-center relative box-border appearance-none outline-none select-none whitespace-nowrap min-w-max subpixel-antialiased overflow-hidden tap-highlight-transparent active:scale-97 active:shadow-none transition-transform-colors-opacity-shadow rounded-pixel',
+  base: 'px-4 min-w-20 h-10 text-[24px] gap-2 z-0 group inline-flex items-center justify-center relative box-border appearance-none outline-none select-none whitespace-nowrap min-w-max subpixel-antialiased overflow-hidden tap-highlight-transparent active:scale-97 active:shadow-none transition-transform-colors-opacity-shadow rounded-pixel hover:-mr-1 hover:ml-1 hover:-mb-[3px] hover:mt-[3px] transition-all duration-500',
   variants: {
     color: {
       default: 'bg-foreground text-primary',

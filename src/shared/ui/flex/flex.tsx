@@ -12,11 +12,11 @@ export const Flex = forwardRef(
     props: FlexProps<T>,
     ref: React.Ref<ComponentPropsWithRef<T>['ref']>,
   ) => {
-    const { className, children, justify, align, col, as, ...rest } = props;
+    const { className, children, justify, align, width, gap, col, as, ...rest } = props;
 
     const Component = as || 'div';
 
-    const classNames = flexTV({ justify, align, col, className });
+    const classNames = flexTV({ justify, align, col, className, width, gap });
 
     return (
       <Component ref={ref} className={classNames} {...rest}>

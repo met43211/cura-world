@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 
 import { Jersey_20, Kodchasan } from 'next/font/google';
+
 import './globals.css';
+import { Header } from '@/widgets/header';
 
 const kodchasan = Kodchasan({
   variable: '--font-kodchasan',
@@ -23,7 +25,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${kodchasan.variable} ${jersey_20.variable} antialiased`}>{children}</body>
+      <body className={`${kodchasan.variable} ${jersey_20.variable} antialiased`}>
+        <Header />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }

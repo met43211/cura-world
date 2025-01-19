@@ -10,6 +10,7 @@ interface AdditionalProps {
     wrapper?: string;
     shadow?: string;
   };
+  startContent?: React.ReactNode;
 }
 
 export type ButtonProps<C extends ElementType> = PolymorphicComponentProps<
@@ -20,8 +21,17 @@ export type ButtonProps<C extends ElementType> = PolymorphicComponentProps<
 export const Button = forwardRef(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   <C extends ElementType = 'button'>(props: ButtonProps<C>, ref: React.Ref<any>) => {
-    const { as, children, className, classNames, color, isDisabled, isLoading, ...buttonProps } =
-      props;
+    const {
+      as,
+      children,
+      className,
+      classNames,
+      startContent,
+      color,
+      isDisabled,
+      isLoading,
+      ...buttonProps
+    } = props;
 
     const Component = as || 'button';
 
@@ -40,6 +50,7 @@ export const Button = forwardRef(
           {...buttonProps}
           ref={ref}
         >
+          {startContent}
           {children}
         </Component>
         <div
