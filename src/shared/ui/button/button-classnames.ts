@@ -9,9 +9,6 @@ export const buttonTv = tv({
       default: 'bg-foreground text-primary',
       primary: 'bg-primary text-foreground',
     },
-    fullWidth: {
-      true: 'w-full',
-    },
     isIconOnly: {
       true: 'px-0 !gap-0',
       false: '[&>svg]:max-w-[theme(spacing.8)]',
@@ -25,7 +22,6 @@ export const buttonTv = tv({
   },
   defaultVariants: {
     color: 'primary',
-    width: 'fit',
     size: 'md',
     isIconOnly: false,
   },

@@ -8,6 +8,7 @@
   --primary: #4d73f2;
   --primary-shadow: #39459a;
   --font-pixel: 'Jersey 20';
+  --font-default: 'Kodchasan';
 }
 
 h1,
@@ -43,12 +44,15 @@ a {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Kodchasan';
+  font-family: var(--font-default);
 }
 
 @layer components {
   .font-pixel {
     font-family: var(--font-pixel);
+  }
+  .font-default {
+    font-family: var(--font-default);
   }
 
   .rounded-pixel-xl {

@@ -9,8 +9,8 @@ import { BlocksLinks } from '@/shared/model/blocks-links';
 
 export const About = () => {
   return (
-    <Flex align='center' className='mt-80' id={BlocksLinks.ABOUT}>
-      <Image alt='about gif' className='rounded-pixel-xl aspect-2/3' src={AboutGIF} />
+    <Flex align='center' className='my-40' id={BlocksLinks.ABOUT}>
+      <Image alt='about gif' className='rounded-pixel-xl aspect-2/3 w-1/2' src={AboutGIF} />
       <Flex col className='ml-10'>
         <TypingText text='About' />
         <p>
