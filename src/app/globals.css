@@ -20,25 +20,25 @@ button {
 }
 
 h1 {
-  font-size: 64;
+  font-size: 64px;
 }
 
 h2 {
-  font-size: 52;
+  font-size: 52px;
   color: var(--primary);
   text-shadow: 2px 1px 0 var(--primary-shadow);
 }
 
 h3 {
-  font-size: 32;
+  font-size: 32px;
 }
 
 button {
-  font-size: 24;
+  font-size: 24px;
 }
 
 a {
-  font-size: 20;
+  font-size: 20px;
 }
 
 body {
