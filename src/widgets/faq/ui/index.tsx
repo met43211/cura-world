@@ -15,7 +15,7 @@ export const FAQBlock = () => {
       <Flex col>
         <LayoutGroup>
           <motion.div layout>
-            <TypingText speed={80} text='Frequently Asked Questions' />
+            <TypingText speed={70} text='Frequently Asked Questions' />
             <p className='mb-4 mt-1'>
               You can ask a question in our{' '}
               <a className='text-[16px] font-default underline' href={BlocksLinks.CONTACTS}>

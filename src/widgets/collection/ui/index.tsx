@@ -12,7 +12,7 @@ export const Collection = () => {
   return (
     <Flex col align='center' className='py-32' gap={0} id={BlocksLinks.COLLECTION} justify='center'>
       <AdaptiveLayout>
-        <TypingText speed={100} text='Genesis Collection' />
+        <TypingText speed={80} text='Genesis Collection' />
       </AdaptiveLayout>
       <Marquee gradient={false} speed={50}>
         {collection.map(({ alt, src }) => (
