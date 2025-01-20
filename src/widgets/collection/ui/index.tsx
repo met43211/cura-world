@@ -10,7 +10,7 @@ import { collection } from '../config';
 
 export const Collection = () => {
   return (
-    <Flex col align='center' className='py-40' gap={0} id={BlocksLinks.COLLECTION} justify='center'>
+    <Flex col align='center' className='py-32' gap={0} id={BlocksLinks.COLLECTION} justify='center'>
       <AdaptiveLayout>
         <TypingText speed={100} text='Genesis Collection' />
       </AdaptiveLayout>
