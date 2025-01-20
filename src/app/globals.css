@@ -47,6 +47,10 @@ body {
   font-family: var(--font-default);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer components {
   .font-pixel {
     font-family: var(--font-pixel);

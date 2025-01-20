@@ -1,4 +1,4 @@
-import { BlocksLinks } from '../../../shared/model/blocks-links';
+import { BlocksLinks } from '@/shared/model/blocks-links';
 
 interface NavLink {
   title: string;

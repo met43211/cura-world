@@ -21,7 +21,7 @@ export const Header = () => {
           </Link>
           <Flex className='justify-self-center' gap={6} width='fit'>
             {navLinks.map(({ href, title }) => (
-              <Link key={href} className='hover:opacity-50 transition-opacity' href={href}>
+              <Link key={href} className='hover:opacity-50 transition-opacity' href={`#${href}`}>
                 {title}
               </Link>
             ))}
