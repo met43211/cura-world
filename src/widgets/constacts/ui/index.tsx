@@ -12,7 +12,7 @@ export const Contacts = () => {
       <TypingText speed={80} text='Don’t forget to follow us' />
       <Flex className='mt-8' gap={16} width='fit'>
         {socialMedia.map(({ href, icon }) => (
-          <Link key={href} href={href}>
+          <Link key={href} href={href} target='_blank'>
             {icon}
           </Link>
         ))}

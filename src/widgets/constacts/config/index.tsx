@@ -7,7 +7,7 @@ interface SocialMedia {
   icon: React.ReactNode;
 }
 export const socialMedia: SocialMedia[] = [
-  { href: 'ewf', icon: <Discord /> },
-  { href: 'wfe', icon: <X /> },
-  { href: 'wefg', icon: <ME /> },
+  { href: 'https://discord.gg/fKq5ubFWGn', icon: <Discord /> },
+  { href: 'https://x.com/OrdinalsCura', icon: <X /> },
+  { href: 'https://magiceden.io/ordinals/marketplace/cura', icon: <ME /> },
 ];
