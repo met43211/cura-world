@@ -20,12 +20,12 @@ button {
 
 h1 {
   font-size: 64;
-  color: var(--primary);
-  text-shadow: 2px 1px 0 var(--primary-shadow);
 }
 
 h2 {
   font-size: 52;
+  color: var(--primary);
+  text-shadow: 2px 1px 0 var(--primary-shadow);
 }
 
 h3 {

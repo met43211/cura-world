@@ -4,7 +4,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useInView } from 'motion/react';
 
 import { Flex } from './flex';
-import { InViewMargin } from './layouts/in-view-animation-layout/animation-properties';
 
 interface Props {
   text: string;
@@ -16,7 +15,7 @@ export const TypingText = ({ text, speed = 120, tag }: Props) => {
   const [displayedText, setDisplayedText] = useState('');
   const [index, setIndex] = useState(0);
   const ref = useRef(null);
-  const isInView = useInView(ref, { margin: InViewMargin });
+  const isInView = useInView(ref, { margin: '-100px 0px' });
 
   useEffect(() => {
     if (isInView) {
@@ -31,10 +30,10 @@ export const TypingText = ({ text, speed = 120, tag }: Props) => {
     }
   }, [index, text, speed, isInView]);
 
-  const Tag = tag || 'h1';
+  const Tag = tag || 'h2';
 
   return (
-    <Flex ref={ref} align='start'>
+    <Flex ref={ref} align='start' width='fit'>
       <Tag className='inline whitespace-pre leading-10'>{displayedText}</Tag>
       <span className='inline-block bg-primary w-8 h-12 -mt-1 -ml-2 animate-blink' />
     </Flex>

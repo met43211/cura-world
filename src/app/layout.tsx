@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${kodchasan.variable} ${jersey_20.variable} antialiased`}>
         <Header />
-        <main>{children}</main>
+        <main className='overflow-hidden'>{children}</main>
       </body>
     </html>
   );

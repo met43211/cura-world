@@ -5,10 +5,11 @@ import Image from 'next/image';
 import { Flex } from '@/shared/ui/flex';
 import { TypingText } from '@/shared/ui/typing-text';
 import AboutGIF from '@/shared/assets/about.gif';
+import { BlocksLinks } from '@/shared/model/blocks-links';
 
 export const About = () => {
   return (
-    <Flex align='center' className='mt-80'>
+    <Flex align='center' className='mt-80' id={BlocksLinks.ABOUT}>
       <Image alt='about gif' className='rounded-pixel-xl aspect-2/3' src={AboutGIF} />
       <Flex col className='ml-10'>
         <TypingText text='About' />
