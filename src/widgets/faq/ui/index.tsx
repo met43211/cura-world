@@ -10,7 +10,7 @@ import { TypingText } from '@/shared/ui/typing-text';
 
 export const FAQBlock = () => {
   return (
-    <Flex align='center' className='py-32' id={BlocksLinks.FAQ}>
+    <Flex align='center' className='py-24' id={BlocksLinks.FAQ}>
       <Question size='40%' />
       <Flex col>
         <LayoutGroup>

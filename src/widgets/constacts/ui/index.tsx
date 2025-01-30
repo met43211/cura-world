@@ -8,7 +8,7 @@ import { socialMedia } from '../config';
 
 export const Contacts = () => {
   return (
-    <Flex col align='center' className='py-32' id={BlocksLinks.CONTACTS} justify='center'>
+    <Flex col align='center' className='py-24' id={BlocksLinks.CONTACTS} justify='center'>
       <TypingText speed={70} text='Don’t forget to follow us' />
       <Flex className='mt-8' gap={16} width='fit'>
         {socialMedia.map(({ href, icon }) => (

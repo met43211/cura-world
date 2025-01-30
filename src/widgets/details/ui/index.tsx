@@ -11,7 +11,7 @@ const OPTIONS: EmblaOptionsType = { loop: true };
 
 export const Details = () => {
   return (
-    <Flex col className='py-20' id={BlocksLinks.DETAILS}>
+    <Flex col className='py-24' id={BlocksLinks.DETAILS}>
       <TypingText classNames={{ wrapper: '-mb-14' }} speed={80} text='Key details of the game' />
       <Carousel options={OPTIONS} slides={DetailsSlides} />
     </Flex>
