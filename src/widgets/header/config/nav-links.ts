@@ -9,7 +9,7 @@ export const navLinks: NavLink[] = [
   { title: 'about', href: BlocksLinks.ABOUT },
   { title: 'roadmap', href: BlocksLinks.ROADMAP },
   { title: 'collection', href: BlocksLinks.COLLECTION },
-  { title: 'advantages', href: BlocksLinks.ADVANTAGES },
+  { title: 'details', href: BlocksLinks.DETAILS },
   { title: 'faq', href: BlocksLinks.FAQ },
   { title: 'contacts', href: BlocksLinks.CONTACTS },
 ];

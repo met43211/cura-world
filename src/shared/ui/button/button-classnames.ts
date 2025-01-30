@@ -10,7 +10,7 @@ export const buttonTv = tv({
       primary: 'bg-primary text-foreground',
     },
     isIconOnly: {
-      true: 'px-0 !gap-0',
+      true: 'p-0 !gap-0 w-10 h-10',
       false: '[&>svg]:max-w-[theme(spacing.8)]',
     },
     isDisabled: {

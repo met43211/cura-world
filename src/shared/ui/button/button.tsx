@@ -29,6 +29,7 @@ export const Button = forwardRef(
       startContent,
       color,
       isDisabled,
+      isIconOnly,
       isLoading,
       ...buttonProps
     } = props;
@@ -40,6 +41,7 @@ export const Button = forwardRef(
       isDisabled,
       isLoading,
       className,
+      isIconOnly,
     });
 
     return (

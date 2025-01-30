@@ -9,9 +9,10 @@ interface Props {
   text: string;
   speed?: number;
   tag?: 'h1' | 'h2' | 'h3' | 'p';
+  classNames?: { wrapper?: string };
 }
 
-export const TypingText = ({ text, speed = 120, tag }: Props) => {
+export const TypingText = ({ text, speed = 120, tag, classNames }: Props) => {
   const [displayedText, setDisplayedText] = useState('');
   const [index, setIndex] = useState(0);
   const ref = useRef(null);
@@ -33,7 +34,7 @@ export const TypingText = ({ text, speed = 120, tag }: Props) => {
   const Tag = tag || 'h2';
 
   return (
-    <Flex ref={ref} align='start' width='fit'>
+    <Flex ref={ref} align='start' className={classNames?.wrapper} width='fit'>
       <Tag className='inline whitespace-pre leading-10'>{displayedText}</Tag>
       <span className='inline-block bg-primary w-8 h-12 -mt-1 -ml-2 animate-blink' />
     </Flex>
