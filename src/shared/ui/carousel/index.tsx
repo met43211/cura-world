@@ -37,8 +37,8 @@ const Carousel: React.FC<PropType> = (props) => {
 
   return (
     <section className='embla'>
-      <Flex align='center' className='mb-8' justify='end'>
-        <Flex width='fit'>
+      <Flex align='center' className='md:mb-8 mb-16' justify='end'>
+        <Flex width='fit' className='hidden md:flex'>
           <PrevButton onClick={onPrevButtonClick} />
           <NextButton onClick={onNextButtonClick} />
         </Flex>

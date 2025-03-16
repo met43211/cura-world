@@ -25,9 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${kodchasan.variable} ${jersey_20.variable} antialiased relative pt-6`}>
+      <body
+        className={`${kodchasan.variable} ${jersey_20.variable} antialiased relative md:pt-6 pt-2`}
+      >
         <Header />
-        <main className='overflow-hidden'>{children}</main>
+        <main className='overflow-hidden md:-mt-28 -mt-20'>{children}</main>
       </body>
     </html>
   );

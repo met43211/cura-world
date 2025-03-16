@@ -66,11 +66,20 @@ const DetailsSlidesData = [
 
 export const DetailsSlides = DetailsSlidesData.map((slide, index) => (
   <Flex key={index} col align='center' gap={0} justify='center'>
-    <Flex align='center' className='relative xl:h-[240px] h-[200px]' gap={0} justify='center'>
-      <Image alt={slide.title} className='object-contain h-[260px]' src={slide.img} />
+    <Flex
+      align='center'
+      className='relative xl:h-[240px] md:h-[200px] h-[140px]'
+      gap={0}
+      justify='center'
+    >
+      <Image
+        alt={slide.title}
+        className='object-contain xl:h-[240px] md:h-[200px] h-[140px]'
+        src={slide.img}
+      />
     </Flex>
-    <Flex col align='center' className='p-4 h-[200px]' justify='start'>
-      <h3 className='leading-4'>{slide.title}</h3>
+    <Flex col align='center' className='sm:p-4 h-[200px] sm:test-base text-sm' justify='start'>
+      <h3 className='leading-4 sm:text-[32px] text-[24px]'>{slide.title}</h3>
       {slide.text}
     </Flex>
   </Flex>
