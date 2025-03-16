@@ -1,25 +1,19 @@
 import Image from 'next/image';
 
 import { Flex } from '@/shared/ui/flex';
-import BG from '@/shared/assets/hero.png';
+import HERO from '@/shared/assets/hero.gif';
 
 export const Hero = () => {
   return (
     <>
-      <Flex
-        align='center'
-        className='absolute h-[800px] top-0 overflow-hidden'
-        id='hero'
-        justify='center'
-      >
-        <h3>Hero Block</h3>
+      <Flex align='center' id='hero' justify='center'>
         <Image
-          alt={'bg'}
-          className='absolute bottom-0 left-0 pointer-events-none h-full'
-          src={BG}
+          alt={'hero'}
+          className='absolute top-0 left-0 pointer-events-none w-full rounded-pixel-hero'
+          src={HERO}
         />
       </Flex>
-      <div className='h-[760px]' />
+      <div className='h-[550px]' />
     </>
   );
 };

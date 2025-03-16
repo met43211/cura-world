@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { Flex } from '@/shared/ui/flex';
 import Logo from '@/shared/assets/logo.png';
 import { Button } from '@/shared/ui/button';
 import { Play } from '@/shared/assets/icons/play';
@@ -18,13 +17,13 @@ export const Header = () => {
       <Link href={'#hero'}>
         <Image alt='logo' src={Logo} width={108} />
       </Link>
-      <Flex className='justify-self-center' gap={6} width='fit'>
+      <div className='md:flex justify-self-center hidden gap-6'>
         {navLinks.map(({ href, title }) => (
           <Link key={href} className='hover:opacity-50 transition-opacity' href={`#${href}`}>
             {title}
           </Link>
         ))}
-      </Flex>
+      </div>
       <Button as={Link} classNames={{ wrapper: 'h-fit' }} href={authUrl} startContent={<Play />}>
         Cura World
       </Button>

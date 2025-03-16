@@ -3,6 +3,9 @@ import Image from 'next/image';
 import { Flex } from '@/shared/ui/flex';
 import Boss from '@/shared/assets/details/boss.png';
 import Chest from '@/shared/assets/details/chest.png';
+import Arena from '@/shared/assets/details/arena.png';
+import Currency from '@/shared/assets/details/currency.png';
+import Shop from '@/shared/assets/details/shop.png';
 
 const DetailsSlidesData = [
   {
@@ -18,7 +21,7 @@ const DetailsSlidesData = [
   },
   {
     title: 'In-game currency',
-    img: Chest,
+    img: Currency,
     text: (
       <p className='text-center'>
         You will be able to accumulate coins that will be useful to you for purchases in our shop.
@@ -39,7 +42,7 @@ const DetailsSlidesData = [
   },
   {
     title: 'Arena',
-    img: Boss,
+    img: Arena,
     text: (
       <p className='text-center'>
         The Arena is a public location in the game where you will have to fight mobs and set your
@@ -50,9 +53,9 @@ const DetailsSlidesData = [
   },
   {
     title: 'Shop',
-    img: Chest,
+    img: Shop,
     text: (
-      <p className='text-center px-3'>
+      <p className='text-center xl:px-3'>
         Here you will be able to spend coins on various items that will help you in the dungeon.
         There will also be a limited number of whitelists and airdrops available in the shop. This
         location will be available later.
@@ -63,8 +66,8 @@ const DetailsSlidesData = [
 
 export const DetailsSlides = DetailsSlidesData.map((slide, index) => (
   <Flex key={index} col align='center' gap={0} justify='center'>
-    <Flex align='center' className='relative h-[240px]' gap={0} justify='center'>
-      <Image alt={slide.title} src={slide.img} />
+    <Flex align='center' className='relative xl:h-[240px] h-[200px]' gap={0} justify='center'>
+      <Image alt={slide.title} className='object-contain h-[260px]' src={slide.img} />
     </Flex>
     <Flex col align='center' className='p-4 h-[200px]' justify='start'>
       <h3 className='leading-4'>{slide.title}</h3>

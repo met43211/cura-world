@@ -10,13 +10,25 @@ import { collection } from '../config';
 
 export const Collection = () => {
   return (
-    <Flex col align='center' className='py-24' gap={0} id={BlocksLinks.COLLECTION} justify='center'>
+    <Flex
+      col
+      align='center'
+      className='py-12 md:py-24'
+      gap={0}
+      id={BlocksLinks.COLLECTION}
+      justify='center'
+    >
       <AdaptiveLayout>
         <TypingText speed={80} text='Genesis Collection' />
       </AdaptiveLayout>
       <Marquee gradient={false} speed={50}>
         {collection.map(({ alt, src }) => (
-          <Image key={alt} alt={alt} className='mr-4 rounded-pixel-xl' height={410} src={src} />
+          <Image
+            key={alt}
+            alt={alt}
+            className='mr-4 rounded-pixel-xl w-[200px] sm:w-[300px] md:w-[410px] aspect-square'
+            src={src}
+          />
         ))}
       </Marquee>
     </Flex>

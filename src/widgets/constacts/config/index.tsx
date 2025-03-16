@@ -7,7 +7,10 @@ interface SocialMedia {
   icon: React.ReactNode;
 }
 export const socialMedia: SocialMedia[] = [
-  { href: 'https://discord.gg/fKq5ubFWGn', icon: <Discord /> },
-  { href: 'https://x.com/OrdinalsCura', icon: <X /> },
-  { href: 'https://magiceden.io/ordinals/marketplace/cura', icon: <ME /> },
+  { href: 'https://discord.gg/fKq5ubFWGn', icon: <Discord className='w-[80px] md:w-[132px]' /> },
+  { href: 'https://x.com/OrdinalsCura', icon: <X className='w-[80px] md:w-[132px]' /> },
+  {
+    href: 'https://magiceden.io/ordinals/marketplace/cura',
+    icon: <ME className='w-[80px] md:w-[132px]' />,
+  },
 ];

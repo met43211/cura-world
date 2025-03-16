@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .embla__viewport {
   overflow: hidden;
   width: calc(100% + 20px);
@@ -85,4 +86,14 @@
 .embla__dot--selected:after {
   background-color: var(--primary);
   opacity: 1;
+}
+@media (max-width: 1440px) {
+  .embla {
+    --slide-size: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .embla {
+    --slide-size: 100%;
+  }
 }

@@ -35,8 +35,10 @@ export const TypingText = ({ text, speed = 120, tag, classNames }: Props) => {
 
   return (
     <Flex ref={ref} align='start' className={classNames?.wrapper} width='fit'>
-      <Tag className='inline whitespace-pre leading-10'>{displayedText}</Tag>
-      <span className='inline-block bg-primary w-8 h-12 -mt-1 -ml-2 animate-blink' />
+      <Tag className='inline whitespace-pre leading-10 text-[24px] sm:text-[52px]'>
+        {displayedText}
+      </Tag>
+      <span className='inline-block bg-primary w-4 h-6 mt-2 sm:w-8 sm:h-12 sm:-mt-1 -ml-2 animate-blink' />
     </Flex>
   );
 };

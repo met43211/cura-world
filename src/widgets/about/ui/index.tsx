@@ -9,11 +9,15 @@ import { BlocksLinks } from '@/shared/model/blocks-links';
 
 export const About = () => {
   return (
-    <Flex align='center' className='py-24' id={BlocksLinks.ABOUT}>
-      <Image alt='about gif' className='rounded-pixel-xl aspect-2/3 w-1/2' src={AboutGIF} />
-      <Flex col className='ml-10'>
+    <Flex align='center' className='py-6 md:py-24' id={BlocksLinks.ABOUT}>
+      <Image
+        alt='about gif'
+        className='rounded-pixel-xl aspect-2/3 w-1/2 hidden lg:block'
+        src={AboutGIF}
+      />
+      <Flex col className='ml-0 lg:ml-10 items-center lg:items-start text-center lg:text-start'>
         <TypingText text='About' />
-        <p>
+        <p className='text-xs sm:text-base'>
           Cura is a 1/1 community, designed to evolve and create value for its holders. Each
           inscription is handcrafted and animated, giving the collection its uniqueness and
           recognisability. An additional utillity is our game, in which you will be able to mine
