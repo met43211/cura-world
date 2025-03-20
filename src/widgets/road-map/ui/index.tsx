@@ -1,29 +1,17 @@
 'use client';
 
-import { useMediaQuery } from 'react-responsive';
 import clsx from 'clsx';
-import { useEffect, useState } from 'react';
 
 import { BlocksLinks } from '@/shared/model/blocks-links';
 import { Flex } from '@/shared/ui/flex';
 import { TypingText } from '@/shared/ui/typing-text';
+import { useSafeMediaQuery } from '@/shared/lib/hooks/useSeafeMediaQuery';
 
 import { DesktopMap } from './desktop-map';
 import { TabletMap } from './tablet-map';
 import { PhoneMap } from './phone-map';
 
 export const RoadMap = () => {
-  const useSafeMediaQuery = (query: string) => {
-    const [isClient, setIsClient] = useState(false);
-    const matches = useMediaQuery({ query });
-
-    useEffect(() => {
-      setIsClient(true);
-    }, []);
-
-    return isClient ? matches : false;
-  };
-
   const isDesktop = useSafeMediaQuery('(min-width: 1400px)');
   const isTablet = useSafeMediaQuery('(min-width: 768px) and (max-width: 1399px)');
   const isPhone = useSafeMediaQuery('(max-width: 767px)');
