@@ -20,7 +20,7 @@ export const FAQBlock = () => {
               You can ask a question in our{' '}
               <a
                 className='font-default underline text-sm sm:text-base'
-                href={BlocksLinks.CONTACTS}
+                href={`#${BlocksLinks.CONTACTS}`}
               >
                 social media
               </a>
