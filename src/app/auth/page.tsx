@@ -1,5 +1,5 @@
-export default function Auth(props: { token: string }) {
-  console.log(props);
+export default function Auth({ params }: { params: Promise<{ id: string }> }) {
+  console.log(params);
 
   return <></>;
 }
