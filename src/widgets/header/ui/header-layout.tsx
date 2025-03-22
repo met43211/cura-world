@@ -3,11 +3,13 @@
 import { PropsWithChildren, useState } from 'react';
 import { useEffect } from 'react';
 import clsx from 'clsx';
+import { usePathname } from 'next/navigation';
 
 import { Flex } from '@/shared/ui/flex';
 
 export const HeaderLayout = ({ children }: PropsWithChildren) => {
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,6 +20,8 @@ export const HeaderLayout = ({ children }: PropsWithChildren) => {
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  if (pathname === '/auth') return null;
 
   return (
     <>

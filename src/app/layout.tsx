@@ -1,5 +1,3 @@
-import type { Metadata } from 'next';
-
 import { Jersey_20, Kodchasan } from 'next/font/google';
 
 import './globals.css';
@@ -13,10 +11,7 @@ const kodchasan = Kodchasan({
 
 const jersey_20 = Jersey_20({ variable: '--font-jersey_20', weight: '400', subsets: ['latin'] });
 
-export const metadata: Metadata = {
-  title: 'Cura',
-  description: '',
-};
+export { metadata } from '@/shared/config/metadata';
 
 export default function RootLayout({
   children,

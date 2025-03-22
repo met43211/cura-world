@@ -44,6 +44,7 @@ const eslintConfig = [
       'typescript/no-explicit-any': 'off',
       'react/display-name': 'off',
       'typescript/no-empty-object-type': 'off',
+      'react-hooks/exhaustive-deps': 'off',
       'typescript/no-unused-vars': [
         'warn',
         {
