@@ -21,7 +21,7 @@ export const Login = () => {
     const redirectUrl = process.env.NEXT_PUBLIC_REDIRECT_URL;
 
     setAuthUrl(
-      `${url}?client_id=${clientId}&scope=profile&response_type=code&redirect_uri=${redirectUrl}&code_challenge=${code_challenge}&code_challenge_method=S256&state=x1561axa165`,
+      `${url}?client_id=${clientId}&scope=profile nfts socials.discord socials.twitter wallets&response_type=code&redirect_uri=${redirectUrl}&code_challenge=${code_challenge}&code_challenge_method=S256&state=x1561axa165`,
     );
   };
 
