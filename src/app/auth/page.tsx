@@ -1,7 +1,5 @@
-function Auth(props: string) {
+export default function Auth(props: string) {
   console.log(props);
 
   return <></>;
 }
-
-export default Auth;
