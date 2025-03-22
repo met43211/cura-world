@@ -1,4 +1,4 @@
-export default function Auth(props: string) {
+export default function Auth(props: { token: string }) {
   console.log(props);
 
   return <></>;
