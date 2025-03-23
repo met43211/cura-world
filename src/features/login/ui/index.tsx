@@ -1,17 +1,17 @@
 'use client';
 
-import pkceChallenge from 'pkce-challenge';
 import Cookies from 'js-cookie';
 import { useRouter } from 'next/navigation';
 
 import { Play } from '@/shared/assets/icons/play';
 import { Button } from '@/shared/ui/button';
+import { generatePKCE } from '@/shared/lib/generate-PKCE ';
 
 export const Login = () => {
   const router = useRouter();
 
   const handleClick = async () => {
-    const { code_challenge, code_verifier } = await pkceChallenge();
+    const { code_challenge, code_verifier } = await generatePKCE();
 
     console.log(code_challenge, code_verifier);
 
