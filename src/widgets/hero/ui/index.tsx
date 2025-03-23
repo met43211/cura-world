@@ -8,14 +8,16 @@ export const Hero = () => {
   return (
     <div className='relative'>
       <Image
-        id='hero'
+        unoptimized
         alt={'hero'}
-        className='pointer-events-none w-full rounded-pixel-hero object-cover min-h-[600px] md:object-right md:brightness-100 brightness-75'
+        className='pointer-events-none w-full object-cover min-h-[600px] md:object-right md:brightness-100 brightness-75'
+        id='hero'
         src={HERO}
       />
       <Flex className='absolute top-1/2 -translate-y-1/2 right-1/2 translate-x-1/2 max-w-[1440px] w-full md:justify-end justify-center'>
-        <Image src={CuraWorld} alt='cura-world' />
+        <Image unoptimized alt='cura-world' src={CuraWorld} />
       </Flex>
+      <div className='absolute bottom-0 z-10 w-full h-10 bg-gradient-to-t from-background to-transparent transition-opacity' />
     </div>
   );
 };

@@ -11,6 +11,7 @@ export const About = () => {
   return (
     <Flex align='center' className='py-24' id={BlocksLinks.ABOUT}>
       <Image
+        unoptimized
         alt='about gif'
         className='rounded-pixel-xl aspect-2/3 w-1/2 hidden lg:block'
         src={AboutGIF}
