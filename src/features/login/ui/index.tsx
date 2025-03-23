@@ -11,8 +11,6 @@ export const Login = () => {
   const router = useRouter();
 
   const handleClick = async () => {
-    if (typeof window === 'undefined') return;
-
     const { code_challenge, code_verifier } = await generatePKCE();
 
     console.log(code_challenge, code_verifier);
