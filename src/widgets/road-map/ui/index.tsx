@@ -26,6 +26,7 @@ export const RoadMap = () => {
     <Flex
       col
       align='center'
+      as='section'
       className='py-12 md:py-24 md:gap-16 gap-8 mb-16'
       id={BlocksLinks.ROADMAP}
     >

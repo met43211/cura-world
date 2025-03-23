@@ -11,7 +11,7 @@ const OPTIONS: EmblaOptionsType = { loop: true };
 
 export const Details = () => {
   return (
-    <Flex col className='py-24' id={BlocksLinks.DETAILS}>
+    <Flex col as='section' className='py-24' id={BlocksLinks.DETAILS}>
       <TypingText
         classNames={{ wrapper: 'md:-mb-14 -mb-16' }}
         speed={80}

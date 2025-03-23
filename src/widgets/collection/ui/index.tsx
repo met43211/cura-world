@@ -13,6 +13,7 @@ export const Collection = () => {
     <Flex
       col
       align='center'
+      as='section'
       className='py-12 md:py-24 md:gap-8 gap-4'
       id={BlocksLinks.COLLECTION}
       justify='center'

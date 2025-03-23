@@ -14,13 +14,13 @@ export const Header = () => {
       <Link href={'#hero'}>
         <Image alt='logo' src={Logo} width={108} />
       </Link>
-      <div className='md:flex justify-self-center hidden gap-6'>
+      <nav className='md:flex justify-self-center hidden gap-6'>
         {navLinks.map(({ href, title }) => (
           <Link key={href} className='hover:opacity-50 transition-opacity' href={`#${href}`}>
             {title}
           </Link>
         ))}
-      </div>
+      </nav>
       <Login />
     </HeaderLayout>
   );

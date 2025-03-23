@@ -6,7 +6,7 @@ import CuraWorld from '@/shared/assets/cura-world.gif';
 
 export const Hero = () => {
   return (
-    <div className='relative'>
+    <section className='relative'>
       <Image
         unoptimized
         alt={'hero'}
@@ -18,6 +18,7 @@ export const Hero = () => {
         <Image unoptimized alt='cura-world' src={CuraWorld} />
       </Flex>
       <div className='absolute bottom-0 z-10 w-full h-10 bg-gradient-to-t from-background to-transparent transition-opacity' />
-    </div>
+      <h1 className='sr-only'>Cura World</h1>
+    </section>
   );
 };

@@ -9,7 +9,7 @@ import { BlocksLinks } from '@/shared/model/blocks-links';
 
 export const About = () => {
   return (
-    <Flex align='center' className='py-24' id={BlocksLinks.ABOUT}>
+    <Flex align='center' as={'section'} className='py-24' id={BlocksLinks.ABOUT}>
       <Image
         unoptimized
         alt='about gif'

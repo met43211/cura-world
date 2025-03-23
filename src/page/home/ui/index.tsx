@@ -34,6 +34,7 @@ export const HomePage = () => {
           <Contacts />
         </InViewAnimationLayout>
       </AdaptiveLayout>
+      <footer className='sr-only' />
     </>
   );
 };

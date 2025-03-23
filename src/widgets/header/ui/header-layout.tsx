@@ -35,7 +35,11 @@ export const HeaderLayout = ({ children }: PropsWithChildren) => {
         )}
       />
 
-      <Flex className={'sticky top-0 left-0 z-10 md:h-20 h-16 overflow-hidden'} justify='center'>
+      <Flex
+        as='header'
+        className={'sticky top-0 left-0 z-10 md:h-20 h-16 overflow-hidden'}
+        justify='center'
+      >
         <Flex align='center' className='max-w-[1440px] xl:px-20 md:px-12 px-4' justify='between'>
           {children}
         </Flex>
