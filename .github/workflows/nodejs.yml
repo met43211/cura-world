@@ -24,4 +24,4 @@ jobs:
 
       - name: Deploy to server
         run: |
-          ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} 'source /root/.nvm/nvm.sh && cd ~/cura-world && npm run restart:prod'
+          ssh ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }} 'cd ~/cura-world && npm i && npm run restart:prod'

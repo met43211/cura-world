@@ -1,17 +1,16 @@
 'use client';
 
-import Link from 'next/link';
 import pkceChallenge from 'pkce-challenge';
 import Cookies from 'js-cookie';
-import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 import { Play } from '@/shared/assets/icons/play';
 import { Button } from '@/shared/ui/button';
 
 export const Login = () => {
-  const [authUrl, setAuthUrl] = useState('');
+  const router = useRouter();
 
-  const initAuthUrl = async () => {
+  const handleClick = async () => {
     const { code_challenge, code_verifier } = await pkceChallenge();
 
     Cookies.set('code_verifier', code_verifier);
@@ -20,17 +19,13 @@ export const Login = () => {
     const clientId = process.env.NEXT_PUBLIC_CLIENT_ID;
     const redirectUrl = process.env.NEXT_PUBLIC_REDIRECT_URL;
 
-    setAuthUrl(
-      `${url}?client_id=${clientId}&scope=profile nfts socials.discord socials.twitter wallets&response_type=code&redirect_uri=${redirectUrl}&code_challenge=${code_challenge}&code_challenge_method=S256&state=x1561axa165`,
-    );
+    const authUrl = `${url}?client_id=${clientId}&scope=profile nfts socials.discord socials.twitter wallets&response_type=code&redirect_uri=${redirectUrl}&code_challenge=${code_challenge}&code_challenge_method=S256&state=x1561axa165`;
+
+    router.push(authUrl);
   };
 
-  useEffect(() => {
-    initAuthUrl();
-  }, []);
-
   return (
-    <Button as={Link} classNames={{ wrapper: 'h-fit' }} href={authUrl} startContent={<Play />}>
+    <Button classNames={{ wrapper: 'h-fit' }} startContent={<Play />} onClick={handleClick}>
       Cura World
     </Button>
   );
